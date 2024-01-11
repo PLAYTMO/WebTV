@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+}
+
+.navbar{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+}
+
+.navbar-container{
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    height: 100%;
+    color: white;
+    font-family: 'Sen', sans-serif;
+}
+
+.logo-container{
+    flex: 1;
+    display: flex;
+}
+
+.logo-icon{
+    font-size: 25px;
+    padding-left: 9px;
+    padding-top: 6px;
+}
+
+.logo{
+    font-size: 35px;
+    color: blueviolet;
+}
+
+.menu-container{
+    flex: 6;
+}
+
+.menu-list{
+    display: flex;
+    list-style: none;
+}
+
+.menu-list-item{
+    margin: 30px;
+}
+
+.menu-list-item.active{
+ font-weight: bold;
+}
+
+.profile-container{
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.profile-text-container{
+    margin: 0 20px;
+}
+.profile-picture{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.toggle{
+    width: 40px;
+    height: 20px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.toggle-icon{
+    color: rgb(42, 42, 100);
+}
+
+.toggle-ball{
+    width: 18px;
+    height: 18px;
+    background-color: black;
+    position: absolute;
+    right: 1px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.sidebar{
+    width: 30px;
+    height: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 40px;
+}
+
+.left-menu-icon{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.container{
+    background-color: #151515;
+    height: calc(100vh - 50px);
+    color: white;
+}
+
+.content-container{
+    margin-left: 30px;
+    background-color: rgb(44, 8, 51);
+}
+
+.featured-content{
+    height: 50vh;
+    padding: 50px;
+}
+
+.featured-title{
+    width: 200px;
+}
+
+.featured-desc{
+    width: 300px;
+    color: lightgray;
+    margin: 30px 0;
+    padding: 8px;
+}
+
+.featured-button{
+    background-color: blueviolet;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.movie-list-title{
+    padding-top: 100px;
+    position: relative;
+}
+
+.movie-list-title2{
+    position: relative;
+}
+
+.movie-list-title3{
+    padding-top: 100px;
+    position: relative;
+}
+
+.movie-list-container{
+    padding: 30 40px;
+}
+
+.movie-list-wrapper{
+    position: relative;
+    overflow: hidden;
+}
+
+.movie-list{
+    display: flex;
+    height: 300px;
+    align-items: center;
+    transform: translateX(0);
+}
+
+.movie-list-item{
+    margin-right: 30px;
+    position: relative;
+}
+
+.movie-list-item:hover .movie-list-item-img{
+    transform: scale(1.2);
+    margin: 0 30px;
+    opacity: 0.5;
+}
+
+.movie-list-item:hover .movie-list-item-title,
+.movie-list-item:hover .movie-list-item-desc,
+.movie-list-item:hover .movie-list-item-button{
+    opacity: 1;
+}
+
+.movie-list-item-img{
+    transition: all 1s ease-in-out;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.movie-list-item-title{
+    background-color: #333;
+    padding: 0 10px;
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    top: 10%;
+    left: 40px;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+}
+
+.movie-list-item-desc{
+    color: white;
+    background-color: #333;
+    padding: 10px;
+    font-size: 14px;
+    position: absolute;
+    top: 30%;
+    left: 40px;
+    width: 150px;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+}
+
+.movie-list-item-button{
+    padding: 10px;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    left: 40px;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+}
+
+.fa-arrow-right{
+    font-size: 75px;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    color: rgb(119, 118, 118);
+    opacity: 0.8;
+    cursor: pointer;
+}
